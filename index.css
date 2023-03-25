@@ -217,8 +217,8 @@ html {
   background-color: transparent;
   border: 2px solid var(--clr-text);
   width: fit-content;
-  display: block;
-  margin: 20px auto;
+  display: inline-block;
+  margin: 20px 20px 0 0;
   padding: 10px 22px;
   font-size: 16px;
   color: var(--clr-text);

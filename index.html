@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Mi Portfolio</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("QUV7vgubKnqot9H90");
+    </script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Pablo Obelar</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/pablitoObelar.png" alt="" />
+        </div>
+        <h1>PABLO RAMÓN OBELAR</h1>
+        <h2>Desarrollador web full stack</h2>
+        <div class="redes">
+          <a
+            href="https://www.facebook.com/PabloObelar"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/pablo-obelar-83b959207/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/PabloObelar/" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+            <i class="fa-regular fa-at"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre mi</h2>
+        <p>
+          <span>Hola! Soy Pablo Ramón Obelar</span> y desde adolescente que me
+          interese en el mundo de la informática, por curiosidad y por pasión.
+          Con el tiempo tuve la oportunidad de aprender primero de modo
+          autodidacta y luego tuve la posibilidad de hacer un curso en
+          "ItMaster" para refinar mis conocimientos. Actualmente busco poder
+          seguir aprendiendo en este maravilloso mundo.
+        </p>
+        <div class="fila">
+          <!--DATOS PERSONALES-->
+          <div class="col">
+            <h3>Datos personales</h3>
+            <ul>
+              <li>
+                <strong>Fecha de nacimiento:</strong>
+                31-08-1990
+              </li>
+              <li>
+                <strong>Celular:</strong>
+                11-27734030
+              </li>
+              <li>
+                <strong>Domicilio:</strong>
+                Bomberos voluntarios 2774 Victoria/San Fernando
+              </li>
+              <li>
+                <strong>E-mail:</strong>
+                pabloobelar@gmail.com
+              </li>
+            </ul>
+          </div>
+          <!--INTERESES-->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-video"></i>
+                <span>PELICULAS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-sharp fa-solid fa-paw"></i>
+                <span>MASCOTAS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-language"></i>
+
+                <span>IDIOMAS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-futbol"></i>
+
+                <span>FÚTBOL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="cv/Pablo Ramóncv.pdf"
+          target="_blank"
+          download="Pablo Obelar Cv"
+        >
+          <button>
+            Descargar Cv <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>HTML - CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>MongoDB</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--ATRIBUTOS-->
+          <div class="col">
+            <h3>Atributos</h3>
+            <div class="skill">
+              <span>Compromiso</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>autodidacta</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Trabajo grupal</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Puntualidad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Programacion Web Full Stack</h4>
+              <span class="casa">It Master</span>
+              <span class="fecha">2020 - 2021</span>
+              <p>
+                Inicié en el mundo de la programación durante la pandemia,
+                primero de manera autodidacta y luego para fortalecer los
+                conocimientos adqueridos me inscribí en la academía 'ItMaster'
+                donde me recibí como programador FULLSTACK
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Programacion autodidacta</h4>
+              <span class="casa">Autodidacta</span>
+              <span class="fecha">2019 - Actualidad</span>
+              <p>
+                Empecé a programar de manera autodidacta y a medida que cursaba
+                en "It Master", seguia y sigo fortaleciendo lo aprendido, porque
+                siempre hay que estar actualizado y es lindo poder aprender de
+                algo que me gusta tanto
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Trabajos</h3>
+            <div class="item der">
+              <h4>Vendedor</h4>
+              <span class="casa">Falabella S.A</span>
+              <span class="fecha">2017 - 2021</span>
+              <p>
+                Vendedor en el sector de ropa para hombres, a cargo del orden y
+                reposición de productos, control de mercaderia y atención al
+                público
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>Operario</h4>
+              <span class="casa">Falabella S.A</span>
+              <span class="fecha">2012-2017</span>
+              <p>
+                A cargo de los insumos tanto para la tienda, como para las
+                oficinas, control de mercadería, a cargo de los inventarios,
+                orden y reposición
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/portfolio1.png" alt="" />
+            <div class="overlay">
+              <a
+                href="https://github.com/PabloObelar/primer-proyecto"
+                target="_blank"
+              >
+                <h3>Proyecto Rutas</h3>
+
+                <h4>App React con rutas</h4>
+              </a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/portfolio4.png" alt="" />
+            <div class="overlay">
+              <a
+                href="https://github.com/PabloObelar/piedrapapelotijera"
+                target="_blank"
+              >
+                <h3>Proyecto PWA</h3>
+
+                <h4>Juego piedra papel o tijera PWA</h4>
+              </a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/portfolio3.png" alt="" />
+
+            <div class="overlay">
+              <a href="https://github.com/PabloObelar/libros" target="_blank">
+                <h3>Proyecto NodeJs</h3>
+                <h4>Alta usuario</h4>
+              </a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/portfolio1.png" alt="" />
+            <div class="overlay">
+              <a href="https://github.com/PabloObelar/clima" target="_blank">
+                <h3>Proyecto React</h3>
+                <h4>Clima del mundo</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccio">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!--FORMULARIO-->
+          <div class="col">
+            <form id="form">
+              <div class="field">
+                <label for="from_name">Nombre...</label>
+                <input type="text" name="from_name" id="from_name" />
+              </div>
+              <div class="field">
+                <label for="message">Mensaje</label>
+                <input type="text" name="message" id="message" />
+              </div>
+              <div class="field">
+                <label for="email_id">Tú Email</label>
+                <input type="text" name="email_id" id="email_id" />
+              </div>
+              <div class="field">
+                <label for="user_name">Usuario</label>
+                <input type="text" name="user_name" id="user_name" />
+              </div>
+
+              <button type="submit" id="button">
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
+          <!--MAPA-->
+          <div class="col">
+            <img src="img/ubi.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Bomberos Volutarios
+                  2774, Victoria/San Fernando
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i> +54 1127734030
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i> pabloobelar@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--SECCION FOOTER-->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          href="https://www.facebook.com/PabloObelar"
+          target="_blank"
+          rel="noopener"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/pablo-obelar-83b959207/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/PabloObelar/" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+          <i class="fa-regular fa-at"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
